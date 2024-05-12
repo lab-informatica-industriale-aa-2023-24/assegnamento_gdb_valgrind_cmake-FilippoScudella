@@ -7,6 +7,10 @@ int main()
 {
 	char *p;
 	p = (char *) malloc(20);
+	if(p == NULL){
+		printf("Errore: malloc() fallita in f()\n");
+		exit(EXIT_FAILURE);
+	}
 
 	char *s = p;
 	for(int n = 0; n < 20; n++) {
