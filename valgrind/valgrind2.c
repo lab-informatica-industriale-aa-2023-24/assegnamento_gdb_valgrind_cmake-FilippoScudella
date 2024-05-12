@@ -8,11 +8,24 @@ int main()
 {
 	char *p;
 
-	p = (char *) malloc(19);
-
-	p = (char *) malloc(12);
+	p = malloc(19 * sizeof(char));
+	if(p == NULL){
+		printf("Errore: malloc() fallita in main()\n");
+		exit(EXIT_FAILURE);
+	}
 	free(p);
 
-	p = (char *) malloc(16);
+	p = malloc(12 * sizeof(char));
+	if(p == NULL){
+		printf("Errore: malloc() fallita in main()\n");
+		exit(EXIT_FAILURE);
+	}
+	free(p);
+
+	p = malloc(16 * sizeof(char));
+	if(p == NULL){
+		printf("Errore: malloc() fallita in main()\n");
+		exit(EXIT_FAILURE);
+	}
 	return 0;
 }
