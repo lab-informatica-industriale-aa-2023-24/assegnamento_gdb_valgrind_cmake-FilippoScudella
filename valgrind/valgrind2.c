@@ -27,5 +27,7 @@ int main()
 		printf("Errore: malloc() fallita in main()\n");
 		exit(EXIT_FAILURE);
 	}
+	free(p);
+
 	return 0;
 }
