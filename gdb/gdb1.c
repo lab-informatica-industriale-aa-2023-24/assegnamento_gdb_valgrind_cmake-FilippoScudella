@@ -13,10 +13,10 @@
 
 int main()
 {
-	int somma = 0;
-	int val;
+	float somma = 0;
+	float val;
 	int numeri = 0;
-	while (scanf("%d\n",&val) != EOF) {
+	while (scanf("%f\n",&val) != EOF) {
 		somma += val;
 		numeri++;
 	}
