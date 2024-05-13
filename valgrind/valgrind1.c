@@ -12,6 +12,7 @@ void f(void)
 		exit(EXIT_FAILURE);
 	}
 	x[9] = 0;
+	free(x);
 }
 
 int main(void)
